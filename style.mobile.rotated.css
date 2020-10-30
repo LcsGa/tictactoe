@@ -1,0 +1,40 @@
+h1 {
+    font-size: 1.5rem;
+}
+
+/* players-settings */
+
+.players-settings,
+.players-settings input {
+    font-size: 1.5rem;
+}
+
+.button button {
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+}
+
+.players-settings p {
+    margin-top: 1rem;
+}
+
+/* game */
+
+.player-1,
+.player-2 {
+    font-size: 1.2rem;
+}
+
+/* end-game */
+
+.end-game {
+    font-size: 2rem;
+    padding: 0rem 2rem;
+}
+
+.end-game button {
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem;
+    border-radius: 50vh;
+    outline: none;
+}

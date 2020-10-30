@@ -1,0 +1,65 @@
+h1 {
+    font-size: 2rem;
+}
+
+/* players-settings */
+
+.players-settings,
+.players-settings input {
+    font-size: 1.5rem;
+}
+
+.button button {
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+}
+
+.players-settings p {
+    display: block;
+    margin-top: 1rem;
+}
+
+/* game */
+
+.game-page {
+    flex-direction: column;
+}
+
+.game-grid,
+.lines,
+.horizontal-lines {
+    height: 80vw;
+    width: 80vw;
+}
+
+.player-1,
+.player-2 {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.circle {
+    border-width: 4vw;
+}
+
+.cross,
+.cross-2 {
+    height: calc(56vw / 3);
+    width: 4vw;
+}
+
+/* end-game */
+
+.end-game {
+    font-size: 2rem;
+    padding: 0rem 2rem;
+}
+
+.end-game button {
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem;
+    border-radius: 50vh;
+    outline: none;
+}

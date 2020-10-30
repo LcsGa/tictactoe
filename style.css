@@ -1,0 +1,241 @@
+/* general */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Comfortaa", Arial;
+}
+
+button {
+    background: #50206c;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    outline: none;
+}
+
+/* header */
+
+header {
+    background: #555;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    position: absolute;
+    left: 0;
+    height: 8vh;
+    margin-left: 1rem;
+}
+
+img {
+    height: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* players-settings */
+
+.players-settings {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.player-1-settings {
+    color: blue;
+}
+
+.player-2-settings {
+    color: red;
+}
+
+.players-settings input {
+    font-size: 3rem;
+    text-align: center;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+}
+
+.player-1-settings input {
+    border-bottom: 2px solid blue;
+    color: blue;
+}
+
+.player-2-settings input {
+    border-bottom: 2px solid red;
+    color: red;
+}
+
+.players-settings p {
+    display: inline;
+}
+
+.button button {
+    font-size: 3rem;
+    padding: 0.8rem 3rem 0.5rem;
+    border-radius: 50vh;
+}
+
+/* game */
+
+.game-page {
+    height: 90vh;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-grid {
+    height: 70vh;
+    width: 70vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.player-1,
+.player-2 {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.player-2 {
+    opacity: 0.2;
+}
+
+.player-1,
+.player-1 p {
+    color: blue;
+}
+
+.player-2,
+.player-2 p {
+    color: red;
+}
+
+.player-1 p,
+.player-2 p {
+    display: inline;
+}
+
+.lines {
+    position: absolute;
+    height: 70vh;
+    width: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: -1;
+}
+
+.left-line,
+.right-line {
+    height: 100%;
+    width: 1.2vh;
+    border-radius: 0.6vh;
+    background: #333;
+}
+
+.horizontal-lines {
+    position: absolute;
+    height: 70vh;
+    width: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.top-line,
+.bottom-line {
+    height: 1.2vh;
+    width: 100%;
+    border-radius: 0.6vh;
+    background: #333;
+}
+
+.first-line,
+.second-line,
+.third-line {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+}
+
+.cell-1,
+.cell-2,
+.cell-3 {
+    flex: 1;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    display: block;
+    height: 70%;
+    width: 70%;
+    border-radius: 100%;
+    border: 4vh solid black;
+}
+
+.cross,
+.cross-2 {
+    display: block;
+    height: calc(49vh / 3);
+    width: 4vh;
+    background: #000;
+}
+
+.cross {
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.cross-2 {
+    transform: rotate(-45deg);
+}
+
+/* end-game */
+
+.end-game {
+    height: 90vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: 4rem;
+    text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.end-game button {
+    font-size: 3rem;
+    padding: 1rem 4rem 0.5rem;
+    border-radius: 50vh;
+    outline: none;
+}

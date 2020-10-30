@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="style.mobile.css"
+      media="only screen and (max-width: 550px)"
+    />
+    <link
+      rel="stylesheet"
+      href="style.mobile.rotated.css"
+      media="only screen and (max-height: 550px)"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="tic-tac-toe.png" />
+    <title>TicTacToe</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img src="tic-tac-toe.png" alt="TicTacToe Icon"
+      /></a>
+      <h1>TicTacToe</h1>
+    </header>
+
+    <main>
+      <section class="players-settings">
+        <div class="player-1-settings">
+          <label for="first-player">Entrer le nom du joueur 1 :</label>
+          <input
+            type="text"
+            name="player-1-name"
+            id="first-player"
+            placeholder="Joueur 1"
+          />
+          <p>X</p>
+        </div>
+
+        <div class="player-2-settings">
+          <label for="second-player">Entrer le nom du joueur 2 :</label>
+          <input
+            type="text"
+            name="player-2-name"
+            id="second-player"
+            placeholder="Joueur 2"
+          />
+          <p>O</p>
+        </div>
+
+        <div class="button">
+          <button onclick="addSettings()">Commencer !</button>
+        </div>
+      </section>
+
+      <section class="game-page">
+        <div class="player-1 player">
+          <h2>Joueur 1</h2>
+          <p class="score">0</p>
+        </div>
+
+        <div class="game-grid">
+          <div class="lines">
+            <div class="left-line"></div>
+            <div class="right-line"></div>
+            <div class="horizontal-lines">
+              <div class="top-line"></div>
+              <div class="bottom-line"></div>
+            </div>
+          </div>
+
+          <div class="first-line">
+            <div
+              class="cell-1 cell"
+              id="top-left"
+              onclick="game.play(this)"
+            ></div>
+            <div
+              class="cell-2 cell"
+              id="top-middle"
+              onclick="game.play(this)"
+            ></div>
+            <div
+              class="cell-3 cell"
+              id="top-right"
+              onclick="game.play(this)"
+            ></div>
+          </div>
+
+          <div class="second-line">
+            <div
+              class="cell-1 cell"
+              id="middle-left"
+              onclick="game.play(this)"
+            ></div>
+            <div
+              class="cell-2 cell"
+              id="middle-middle"
+              onclick="game.play(this)"
+            ></div>
+            <div
+              class="cell-3 cell"
+              id="middle-right"
+              onclick="game.play(this)"
+            ></div>
+          </div>
+
+          <div class="third-line">
+            <div
+              class="cell-1 cell"
+              id="bottom-left"
+              onclick="game.play(this)"
+            ></div>
+            <div
+              class="cell-2 cell"
+              id="bottom-middle"
+              onclick="game.play(this)"
+            ></div>
+            <div
+              class="cell-3 cell"
+              id="bottom-right"
+              onclick="game.play(this)"
+            ></div>
+          </div>
+        </div>
+
+        <div class="player-2 player">
+          <h2>Joueur 2</h2>
+          <p class="score">0</p>
+        </div>
+      </section>
+
+      <section class="end-game">
+        <h2>Victoire !</h2>
+        <button onclick="game.initialiseGame()">CONTINUER</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
